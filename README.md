@@ -1,4 +1,4 @@
-Easyly test app for Kode Kalinigrad devs. Has 4 screens. 
+Simple test app for Kode Kaliningrad. Has 4 screens.
 
 
 <b>Screenshots</b>
