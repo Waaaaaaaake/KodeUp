@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingBottom="@dimen/dimen10dp"
+    android:paddingLeft="@dimen/dimen16dp"
+    android:paddingRight="@dimen/dimen16dp"
+    android:paddingTop="@dimen/dimen10dp">
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen8dp"
+        android:textAppearance="?attr/textAppearanceListItem"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_alignLeft="@+id/contact"
+        android:layout_alignStart="@+id/contact"
+        android:textColor="@color/note_list_text"
+        android:textAppearance="?attr/textAppearanceListItemSecondary" />
+
+</RelativeLayout>

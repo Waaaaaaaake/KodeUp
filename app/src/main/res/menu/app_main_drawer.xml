@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_image"
+            android:title="@string/ImageMenu_name" />
+        <item
+            android:id="@+id/nav_organizer"
+            android:title="@string/OrganizerMenu_name"/>
+    </group>
+
+</menu>

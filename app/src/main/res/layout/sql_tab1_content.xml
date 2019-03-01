@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fr_tab1">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tab1_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/empty_tab1_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/indent"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/tab1_empty_text"
+        android:textColor="@color/emptyText"
+        android:textSize="@dimen/empty_text"/>
+
+</RelativeLayout>

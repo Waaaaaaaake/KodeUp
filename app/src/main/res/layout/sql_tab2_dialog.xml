@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/dimen8dp"
+    android:paddingLeft="@dimen/dimen8dp"
+    android:paddingTop="@dimen/dimen8dp">
+
+    <TextView
+        android:id="@+id/tab2_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/msg_new_contact"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/dimen20dp"
+        android:textStyle="normal"/>
+
+    <EditText
+        android:id="@+id/layout_tab2_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:padding="@dimen/dimen10dp"
+        android:hint="@string/hint_layout_tab2"
+        android:inputType="textCapSentences"
+        android:textSize="20sp"
+        android:textColorHint="@color/hint_enter_note"/>
+
+    <EditText
+        android:id="@+id/layout_tab2_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/dimen10dp"
+        android:hint="@string/hint_layout_descr"
+        android:inputType="textCapSentences"
+        android:textColorHint="@color/hint_enter_note"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/layout_tab2_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/dimen10dp"
+        android:hint="@string/hint_layout_e_mail"
+        android:inputType="text"
+        android:textColorHint="@color/hint_enter_note"
+        android:textSize="20sp"/>
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/layout_tab2_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen10dp"
+        android:background="@android:color/transparent"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:typeface="monospace"
+        app:allowed_chars="0123456789"
+        app:mask="+7(###)#######"
+        app:keep_hint="true" />
+
+</LinearLayout>

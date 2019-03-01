@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/dimen10dp"
+        android:paddingRight="@dimen/dimen10dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/bs_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-light"
+            android:text="First"
+            android:textSize="16sp"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:clickable="true"
+       android:foreground="?attr/selectableItemBackground"
+       android:orientation="horizontal"
+       android:paddingBottom="8dp"
+       android:paddingLeft="@dimen/dimen10dp"
+       android:paddingRight="@dimen/dimen10dp"
+       android:paddingTop="8dp">
+
+       <ImageView
+           android:id="@+id/bs_iv_phone"
+           android:layout_width="25dp"
+           android:layout_height="35dp"
+           android:layout_marginRight="32dp"
+           android:src="@drawable/ic_phone" />
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/bs_name_phone"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:fontFamily="sans-serif-light"
+               android:text="Second"
+               android:textSize="16sp"
+               android:textAppearance="?attr/textAppearanceListItem"/>
+
+           <TextView
+               android:id="@+id/bs_description_phone"
+               android:layout_width="match_parent"
+               android:text="@string/bs_name_phone"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/bs_name_phone"
+               android:layout_alignLeft="@+id/bs_name_phone"
+               android:layout_alignStart="@+id/bs_name_phone"
+               android:fontFamily="sans-serif-light"
+               android:textSize="12sp"
+               android:textAppearance="?attr/textAppearanceListItemSecondary"
+               android:textColor="#737373" />
+
+       </RelativeLayout>
+
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/dimen10dp"
+        android:paddingRight="@dimen/dimen10dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/bs_iv_email"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/ic_email"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bs_name_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-light"
+                android:text="Third"
+                android:textSize="16sp"
+                android:textAppearance="?attr/textAppearanceListItem"/>
+
+            <TextView
+                android:id="@+id/bs_description_email"
+                android:layout_width="match_parent"
+                android:text="E-mail"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bs_name_email"
+                android:layout_alignLeft="@+id/bs_name_email"
+                android:layout_alignStart="@+id/bs_name_email"
+                android:fontFamily="sans-serif-light"
+                android:textSize="12sp"
+                android:textAppearance="?attr/textAppearanceListItemSecondary"
+                android:textColor="#737373" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
